@@ -272,10 +272,7 @@ body{
         text-align: center;
     }
 
-    .free-plan .plan-features li,
-    .premium-plan .plan-features li {
-        justify-content: center;
-    }
+    
 
     .plan-price {
         font-size: 2rem;
