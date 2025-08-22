@@ -1,3 +1,8 @@
+body{
+    font-family: 'iransansDN', 'Vazirmatn';
+}
+
+
 .pricing-hero {
     text-align: center;
     padding: 1.75rem 20px;
@@ -353,7 +358,6 @@
 
 .quote-icon {
     font-size: 4rem;
-    font-family: serif;
     color: #f3e5f5;
     line-height: 1;
     position: absolute;
