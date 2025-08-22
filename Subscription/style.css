@@ -1,5 +1,3 @@
-/* CSS برای صفحه پلن‌ها */
-
 .pricing-hero {
     text-align: center;
     padding: 1.75rem 20px;
@@ -36,6 +34,7 @@
     justify-content: center;
     align-items: stretch;
 }
+
 .plan-card {
     background-color: #fff;
     border-radius: 15px;
@@ -75,6 +74,7 @@
     color: #343a40;
     margin-bottom: 30px;
 }
+
 .option-price {
     font-size: 1.5rem;
     font-weight: bold;
@@ -241,6 +241,7 @@
     text-align: right;
     color: #343a40;
 }
+
 @media (max-width: 768px) {
     .pricing-hero h1 {
         font-size: 2.5rem;
@@ -255,45 +256,31 @@
         padding: 30px;
     }
 
-    /* وسط چین کردن کامل محتوای پلن رایگان در موبایل */
-    .free-plan {
-        text-align: center;
-    }
-    .free-plan .plan-features {
-        text-align: center;
-    }
-    .free-plan .plan-features li {
-        justify-content: center;
-    }
-
-    /* وسط چین کردن کامل محتوای پلن پولی در موبایل */
+    .free-plan,
     .premium-plan {
         text-align: center;
     }
-    .premium-plan .subscription-options {
+
+    .free-plan .plan-features,
+    .premium-plan .subscription-options,
+    .premium-plan .plan-features {
         text-align: center;
     }
-    .premium-plan .plan-features {
-        text-align: center; /* این بخش برای وسط چین کردن آیتم‌های لیست امکانات است */
-    }
+
+    .free-plan .plan-features li,
     .premium-plan .plan-features li {
-        justify-content: center; /* این بخش برای وسط چین کردن آیکون و متن در کنار هم است */
+        justify-content: center;
     }
 
     .plan-price {
         font-size: 2rem;
     }
-    
+
     .faq-question {
         font-size: 1rem;
     }
-    
-    .faq-answer p {
-        text-align: right;
-    }
 }
 
-/* Styling for discounted prices */
 .price-container {
     display: flex;
     flex-direction: column;
@@ -304,7 +291,7 @@
 .old-price {
     font-size: 1rem;
     color: #6c757d;
-    margin-bottom: -8px; /* Adjust spacing */
+    margin-bottom: -8px;
 }
 
 .new-price {
@@ -314,16 +301,12 @@
     color: #4a148c;
 }
 
-/* Fix mobile alignment for new price structure */
 @media (max-width: 768px) {
-    /* ... other mobile styles ... */
-    
     .price-container {
         align-items: center;
     }
 }
 
-/* New Reviews Section Styling */
 .new-reviews-section {
     padding: 20px;
     background-color: #f8f9fa;
@@ -356,13 +339,12 @@
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    text-align: right; /* برای متن اصلی نظر */
+    text-align: right;
     border-top: 5px solid #6a1b9a;
-    display: flex; /* اضافه شده */
-    flex-direction: column; /* اضافه شده */
-    justify-content: space-between; /* اضافه شده */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
-
 
 .new-review-card:hover {
     transform: translateY(-10px);
@@ -397,7 +379,6 @@
     font-weight: bold;
 }
 
-/* Mobile adjustments */
 @media (max-width: 768px) {
     .new-reviews-section {
         padding: 20px;
@@ -405,9 +386,7 @@
     .new-reviews-section h2 {
         font-size: 2rem;
     }
-    .new-reviews-section p {
-        font-size: 1rem;
-    }
+    .new-reviews-section p,
     .new-reviews-section .section-description {
         font-size: 1rem;
     }
