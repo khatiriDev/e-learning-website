@@ -1,0 +1,163 @@
+/* Blog Post Page Styles */
+
+.post-main {
+    padding: 50px 0;
+    background-color: #F8F9FA;
+}
+
+.post-main .container {
+    display: flex;
+    flex-direction: row-reverse; /* For RTL layout */
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.post-content {
+    flex: 3;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    direction: rtl; /* Ensure content is RTL */
+    text-align: justify;
+}
+
+.post-title {
+    font-size: 2.5rem;
+    color: #4a148c;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    text-align: right;
+}
+
+.post-meta {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 0.9rem;
+    color: #6c757d;
+    margin-bottom: 30px;
+}
+
+.post-meta span i {
+    color: #8e24aa;
+    margin-left: 8px;
+}
+
+.post-image {
+   
+    width: 95%;
+    height: auto;   
+    object-fit: cover;
+    border-radius: 10px;    
+    margin-bottom: 30px;
+}
+
+.post-body h2,
+.post-body h3 {
+    color: #4a148c;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    text-align: right;
+}
+
+.post-body p {
+    font-size: 1.1rem;
+    line-height: 2;
+    color: #343A40;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.post-body a {
+    color: #8e24aa;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.post-body a:hover {
+    color: #6a1b9a;
+}
+
+.post-list {
+    font-size: 1.1rem;
+    line-height: 2;
+    color: #343A40;
+    margin: 25px 0 25px 20px;
+    padding-right: 20px;
+}
+
+.post-list li {
+    margin-bottom: 15px;
+}
+
+
+
+.related-posts {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.related-posts h2 {
+    font-size: 1.6rem;
+    color: #4a148c;
+    margin-bottom: 20px;
+    text-align: right;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+.related-post-card {
+    background-color: #F8F9FA;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.related-post-card a {
+    text-decoration: none;
+    color: #343A40;
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 1.6;
+    display: block;
+}
+
+.related-post-card:hover {
+    background-color: #e9ecef;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .post-main .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    
+
+    .post-title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .post-content {
+        padding: 20px;
+    }
+
+    .post-title {
+        font-size: 1.5rem;
+    }
+
+    .post-body p,
+    .post-list {
+        font-size: 1rem;
+    }
+}
